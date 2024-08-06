@@ -1,0 +1,36 @@
+.titulo {
+    background-color: black;
+    height: 100%;
+    color: white;
+    text-align: center;
+  }
+  div {
+    background-color:grey;
+    margin: 50px;
+    padding: 5px;
+    border-left: 3px solid;
+    
+  }
+  
+  h2 {
+    border-bottom: 2px solid;
+    
+  }
+  .tarefasdiarias{
+      background-color: gray;
+      border-left: 3px solid;
+      padding: 5px;
+     
+  }
+  .material {
+    background-color: gray;
+    border-left: 3px solid;
+    padding: 5px;
+    
+  }
+  
+  .duvidas{
+      background-color: gray;
+  }
+  
+  

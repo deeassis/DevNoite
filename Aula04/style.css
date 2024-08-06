@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(231, 142, 163);
+}
+
+div{
+    background-color: aquamarine;
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+    text-align: center;
+  
+
+}
+img{
+    width: 100%;
+    
+}
+.card{
+    background-color: blue;
+    height: 150 px;
+    width: 150px;
+    border-radius: 50px;
+    text-align: center;
+
+}
+
+#container{
+    background-color: rgb(255, 0, 123);
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+    text-align: center;
+}
+.last{
+    background-color: green;
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+    text-align: center;
+}
