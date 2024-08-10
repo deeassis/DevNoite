@@ -1,36 +1,54 @@
-.titulo {
-    background-color: black;
-    height: 100%;
-    color: white;
-    text-align: center;
-  }
-  div {
-    background-color:grey;
-    margin: 50px;
-    padding: 5px;
-    border-left: 3px solid;
-    
-  }
-  
-  h2 {
-    border-bottom: 2px solid;
-    
-  }
-  .tarefasdiarias{
-      background-color: gray;
-      border-left: 3px solid;
-      padding: 5px;
-     
-  }
-  .material {
-    background-color: gray;
-    border-left: 3px solid;
-    padding: 5px;
-    
-  }
-  
-  .duvidas{
-      background-color: gray;
-  }
-  
-  
+/* Define a fonte padrão e a altura da linha para o corpo da página */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão como Arial, com fallback para Helvetica e fontes sans-serif */
+  line-height: 1.6; /* Define a altura da linha como 1.6 vezes o tamanho da fonte, para melhor legibilidade */
+}
+
+/* Estilo para o elemento <header> */
+header {
+  background-color: black; /* Define a cor de fundo como preto */
+  height: 100%; /* Define a altura como 100% do elemento pai */
+  color: white; /* Define a cor do texto como branco */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  margin: 50px; /* Define uma margem de 50 pixels em torno do elemento */
+}
+
+/* Estilo para o elemento <nav> */
+nav {
+  background-color: bisque; /* Define a cor de fundo como bisque (um tom claro de bege) */
+}
+
+/* Estilo para o elemento <section> */
+section {
+  background-color: rgba(194, 194, 194, 0.495); /* Define a cor de fundo com uma opacidade de 0.495 (cinza claro) */
+  margin: 50px; /* Define uma margem de 50 pixels em torno do elemento */
+  padding: 5px; /* Define um preenchimento interno de 5 pixels */
+}
+
+/* Estilo para elementos <h2> */
+h2 {
+  border-bottom: 2px solid; /* Adiciona uma borda inferior sólida de 2 pixels */
+}
+
+/* Estilo para itens de listas ordenadas (<ol>) */
+ol li {
+  padding: 5px; /* Define um preenchimento interno de 5 pixels */
+  margin: 5px; /* Define uma margem de 5 pixels em torno do item */
+  border-radius: 2px; /* Define bordas arredondadas com raio de 2 pixels */
+  border-left: thick solid #000; /* Adiciona uma borda esquerda espessa, sólida e preta */
+}
+
+/* Estilo para itens de listas não ordenadas (<ul>) */
+ul li {
+  background-color: rgb(245, 245, 245); /* Define a cor de fundo como um tom claro de cinza */
+  padding: 3px; /* Define um preenchimento interno de 3 pixels */
+  margin: 3px; /* Define uma margem de 3 pixels em torno do item */
+  width: 98%; /* Define a largura do item como 98% da largura do elemento pai */
+  border-radius: 2px; /* Define bordas arredondadas com raio de 2 pixels */
+  border-left: thick solid #000; /* Adiciona uma borda esquerda espessa, sólida e preta */
+}
+
+/* Estilo para o elemento <footer> */
+footer {
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
