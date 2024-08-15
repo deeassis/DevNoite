@@ -1,0 +1,87 @@
+/* Define o estilo universal para todos os elementos */
+* {
+  margin: 0; /* Remove as margens padrão de todos os elementos */
+  padding: 0; /* Remove o padding padrão de todos os elementos para evitar espaços extras */
+}
+
+/* Define o estilo para o corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte básica para a página */
+  text-align: center; /* Centraliza o texto em todo o corpo da página */
+}
+
+/* Estilo para o título principal */
+h1 {
+  margin: 20px; /* Adiciona uma margem de 20 pixels ao redor do título */
+  background-color: rgb(140, 221, 240); /* Define a cor de fundo do título */
+  text-align: center; /* Garante que o texto do título esteja centralizado */
+}
+
+/* Estilo para os subtítulos */
+h3 {
+  margin: 20px; /* Adiciona uma margem de 20 pixels acima e abaixo dos subtítulos */
+}
+
+/* Estilo para os parágrafos */
+p {
+  text-align: justify; /* Justifica o texto dentro do parágrafo */
+  margin: 20px auto; /* Adiciona uma margem de 20 pixels acima e abaixo e centraliza horizontalmente */
+  width: 80%; /* Define a largura do parágrafo para 80% da largura do contêiner pai */
+}
+
+/* Estilo para o contêiner de imagem com borda */
+.card-image {
+  border: 2px solid rgb(107, 9, 9); /* Adiciona uma borda sólida de 2 pixels ao redor da imagem */
+  width: 460px; /* Define a largura fixa do contêiner da imagem */
+  margin: 20px auto; /* Adiciona uma margem de 20 pixels acima e abaixo e centraliza horizontalmente */
+  display: inline-block; /* Define o display como inline-block para permitir a centralização */
+  transition-duration: 1s;
+}
+
+/* Estilo para o efeito de hover na imagem */
+.card-image:hover {
+  box-shadow: 15px 15px 20px 3px rgb(203, 69, 69); /* Adiciona uma sombra ao redor da imagem quando o mouse passa sobre ela */
+}
+
+/* Estilo para imagens dentro do contêiner */
+img {
+  width: 100%; /* Faz com que a imagem preencha toda a largura do contêiner */
+}
+
+/* Estilo para vídeos */
+.card-video {
+  width: 460px; /* Define a largura do vídeo */
+  max-width: 640px; /* Define a largura máxima do vídeo */
+  margin: 20px auto; /* Adiciona uma margem de 20 pixels acima e abaixo e centraliza horizontalmente */
+  display: block; /* Define o display como block para garantir a centralização horizontal */
+}
+
+/* Estilo para o áudio */
+audio {
+  margin: 20px auto; /* Adiciona uma margem de 20 pixels acima e abaixo e centraliza horizontalmente */
+  display: block; /* Define o display como block para garantir a centralização horizontal */
+}
+
+/* Estilo para a tabela */
+table {
+  width: 80%; /* Define a largura da tabela para 80% da largura do contêiner pai */
+  margin: 20px auto; /* Adiciona uma margem de 20 pixels acima e abaixo e centraliza horizontalmente */
+  border-collapse: collapse; /* Remove o espaçamento entre as bordas da tabela e das células */
+}
+
+/* Estilo para cabeçalhos e células da tabela */
+th,
+td {
+  border: 1px solid black; /* Adiciona uma borda sólida de 1 pixel em torno das células da tabela */
+  text-align: center; /* Centraliza o texto dentro das células */
+  padding: 10px; /* Adiciona um padding de 10 pixels dentro das células para espaçamento */
+}
+
+/* Estilo para cabeçalhos da tabela */
+th {
+  background-color: rgb(
+    133,
+    191,
+    236
+  ); /* Define a cor de fundo dos cabeçalhos da tabela */
+}
