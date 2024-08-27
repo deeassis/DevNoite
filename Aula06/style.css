@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fbb03b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.welcome-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.media-section, .nutrition-section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1200px; /* Aumentado para melhor visualização */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.media-section h2, .nutrition-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px; /* Aumentado para melhor legibilidade */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px; /* Aumentado para espaçamento extra */
+    text-align: left;
+}
+
+th {
+    background-color: #fbb03b;
+    color: #fff;
+}
+
+video, audio, img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #fbb03b;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

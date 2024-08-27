@@ -1,0 +1,41 @@
+.container{
+height: auto;
+background-color: grey;
+}
+
+.div1{
+    height: 200px ;
+    width: 150px;
+  background-color: aqua;
+  float: left;
+  
+}
+
+.div2{
+    height: 200px ;
+    width: 100px;
+    background-color: rgb(236, 121, 216);
+    float: right;
+}
+.div3{
+    clear: both ;
+}
+.box-texto{
+    width: 400px;
+    height: auto;
+    background-color: blanchedalmond;
+}
+p{
+    margin: 10px;
+}
+.img{
+    height: 100%;
+    width: 100%;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    float: right ;
+    margin: 10px;
+}

@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #c2baba; 
+}
+
+.container, .container1, .container2 {
+    background-color: beige;
+    width: 800px;
+    padding: 2px 1em;
+    margin: 20px auto; /* Centraliza os containers horizontalmente */
+}
+
+.card1, .card2 {
+    overflow: auto /*visible /* Garante que o layout não "vaze" por causa do float */
+}
+
+.card1 img, .card2 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.card1 img {
+    float: left;
+}
+
+.card2 img {
+    float: right;
+}
+
+h3, p {
+    margin: 0;
+}

@@ -1,0 +1,27 @@
+.container{
+    width: 800px;
+    height: 800px;
+    background-color: beige;
+}
+
+.card{
+    background-color: white;
+    border: 1px solid gray;
+    position: relative;
+    margin-bottom: 20px ;
+
+}
+
+.card img{
+    float: left;
+    margin-right: 25px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    float: left;
+
+}
