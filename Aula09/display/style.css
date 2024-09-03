@@ -1,0 +1,38 @@
+/*display -> é a forma como os objetos são renderizados 
+
+block ->ele ocupa todo espaço h1 , div , p
+inline
+inline back
+*/
+
+h1{
+background-color: blue;
+
+}
+h2{
+    background-color: aquamarine;
+    display: none;
+
+}
+
+.inline-element{
+
+    background-color: rgb(197, 19, 19);
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.altura{
+    height: 100px;
+    width: 100px;
+}
+
+.altura1{
+    height: 80px;
+    width: 100px;
+}
+
+.altura2{
+    height: 50px;
+    width: 100px;
+}

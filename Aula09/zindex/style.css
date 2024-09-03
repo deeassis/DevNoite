@@ -1,0 +1,33 @@
+/*
+OBS: o position precisa ser absolute, relative ou fixed. 
+ empilhar */
+
+ .box{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 1px solid slateblue;
+    opacity: 0,8;
+ }
+
+ .box1{
+    background-color: blueviolet;
+
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+ }
+
+ .box2{
+    background-color: rgb(201, 14, 207);
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+
+ }
+ .box3{
+    background-color: greenyellow;
+    top: 150px;
+    left: 150px;
+    z-index: 1;
+ }
