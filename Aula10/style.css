@@ -1,0 +1,105 @@
+*{
+    margin: 0; /* Remove margens padrão de todos os elementos */
+    padding: 0; /* Remove o padding (espaçamento interno) padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e bordas nas dimensões totais dos elementos */
+}
+
+body{
+    background-color: antiquewhite; /* Define a cor de fundo da página */
+    color: #f4e6e6; /* Define a cor do texto */
+}
+
+header{
+    background-color: #333; /* Define a cor de fundo do cabeçalho */
+    padding: 10px 0; /* Aplica um padding (espaçamento) de 10px na parte superior e inferior */
+}
+
+.menu{
+    text-align: center; /* Centraliza o conteúdo dentro do menu */
+}
+
+.menu ul{
+    list-style-type: none; /* Remove o estilo de lista padrão (bolinhas ou números) */
+    position: relative; /* Posiciona o menu relativo ao elemento pai, para manipular submenus */
+}
+
+.menu ul li{
+    display: inline-block; /* Exibe os itens da lista na mesma linha */
+    margin: 0 15px; /* Adiciona uma margem de 15px à esquerda e à direita de cada item de menu */
+}
+
+.menu ul li.about-item{
+    float: right; /* Faz o item flutuar à direita */
+    margin-right: 20px; /* Adiciona uma margem à direita desse item */
+}
+
+.menu ul li a{
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Define a cor do texto do link como branco */
+    font-size: 18px; /* Define o tamanho da fonte como 18px */
+    padding: 10px 15px; /* Adiciona 10px de padding no eixo vertical e 15px no horizontal */
+    display: block; /* Faz o link ocupar o espaço total disponível */
+}
+
+.menu ul li a:hover{
+    background-color: #444; /* Muda a cor de fundo ao passar o mouse sobre o link */
+    border-radius: 6px; /* Adiciona cantos arredondados ao fundo do link */
+}
+
+/* Estilizar o drop-down */
+.menu ul li .dropdown {
+    position: absolute; /* Posiciona o submenu absolutamente em relação ao item pai */
+    display: none; /* Esconde o submenu por padrão */
+    background-color: #333; /* Define a cor de fundo do submenu */
+    right: 0; /* Alinha o submenu à direita */
+    border-radius: 6px; /* Adiciona cantos arredondados ao submenu */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve ao submenu */
+}
+
+.menu ul li .dropdown li a{
+    color: white; /* Define a cor do texto do submenu como branco */
+}
+
+.menu ul li:hover .dropdown {
+    display: block; /* Mostra o submenu ao passar o mouse sobre o item pai */
+}
+
+/* Estilizar a Galeria de Imagens */
+.gallery {
+    padding: 20px; /* Adiciona um espaçamento ao redor da galeria */
+    text-align: center; /* Centraliza o conteúdo da galeria */
+}
+
+.gallery-container {
+    text-align: center; /* Centraliza os itens dentro do container da galeria */
+}
+
+.gallery-item {
+    display: inline-block; /* Exibe os itens da galeria na mesma linha */
+    margin: 7px; /* Adiciona um espaçamento entre as imagens da galeria */
+    width: 45%; /* Define que cada imagem ocupa 45% da largura total da página */
+    padding-bottom: 30%; /* Define a altura proporcional à largura para manter uma aparência quadrada */
+    overflow: hidden; /* Esconde partes da imagem que ultrapassem o limite do container */
+    position: relative; /* Permite que o conteúdo dentro do item da galeria seja posicionado de forma absoluta */
+    transition: transform 0.3s; /* Cria uma transição suave na transformação ao passar o mouse */
+    border-radius: 15px; /* Adiciona bordas arredondadas às imagens */
+}
+
+.gallery-item img {
+    position: absolute; /* Posiciona a imagem absolutamente dentro do container */
+    top: 0; /* Alinha a imagem ao topo do container */
+    left: 0; /* Alinha a imagem à esquerda do container */
+    width: 100%; /* Faz a imagem ocupar toda a largura do container */
+    height: 100%; /* Faz a imagem ocupar toda a altura do container */
+    border-radius: 15px; /* Aplica bordas arredondadas às imagens */
+    transition: transform 0.3s; /* Suaviza a transformação da imagem ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse */
+.gallery-item:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Adiciona uma sombra em volta do item ao passar o mouse */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Aumenta a escala da imagem para 110% ao passar o mouse */
+}
