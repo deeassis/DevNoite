@@ -1,0 +1,43 @@
+/*pseudo-class*/
+h1{color: blue;
+}
+
+h1:hover{
+    background-color: aliceblue;
+}
+h1:active{
+    background-color: brown;
+}
+button:active{
+    background-color:blueviolet;
+}
+
+input:focus{
+    outline: none;
+    border-color: blueviolet;
+    border-radius: 4px ;
+}
+/*odd impar even par */
+li:nth-child(even){
+    background-color: aqua;
+}
+li:nth-child(odd){
+    background-color: rgb(26, 188, 37);
+}
+
+/*input[type="checkbox"]:checked{
+   appearance: none;
+   border: 5px solid black;
+   background-color: blue;
+   border-color: blue;
+}*/
+
+li:last-child{
+    background-color: red;
+
+}
+
+
+li:first-child:hover{
+    background-color: red;
+}
