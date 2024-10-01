@@ -1,0 +1,14 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: #f8f8f8; }
+.navbar ul { list-style-type: none; margin: 0; padding: 0; display: flex; }
+.navbar li { margin-right: 20px; }
+.navbar a { text-decoration: none; color: black; }
+.content { padding: 20px; }
+.content h1 { color: green; }
+.gallery { display: flex; gap: 10px; }
+.gallery img { width: 30%; }
+.footer { padding: 20px; background-color: #f8f8f8; }
+.footer .contact { margin-bottom: 20px; }
+.footer .faq { margin-bottom: 20px; }
+.footer .contact-form { background-color: #e0f7e0; padding: 10px; }
+.footer .contact-form input, .footer .contact-form button { display: block; margin-bottom: 10px; width: 100%; }

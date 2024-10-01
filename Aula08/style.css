@@ -1,39 +1,52 @@
-html, body {
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #c2baba; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
 
-.container, .container1, .container2 {
-    background-color: beige;
-    width: 800px;
-    padding: 2px 1em;
-    margin: 20px auto; /* Centraliza os containers horizontalmente */
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.card1, .card2 {
-    overflow: auto /*visible /* Garante que o layout não "vaze" por causa do float */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+    overflow: hidden; /* conter os elementos flutuantes */
 }
 
-.card1 img, .card2 img {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    margin: 10px;
-}
-
-.card1 img {
+.card img {
     float: left;
+    margin-right: 15px;
+    border-radius: 50%;
 }
 
-.card2 img {
+.card img.right {
     float: right;
+    margin-left: 15px;
+    margin-right: 0;
 }
 
-h3, p {
-    margin: 0;
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.content {
+    overflow: hidden; /* Garante que o conteúdo ao redor do float não se sobreponha */
 }

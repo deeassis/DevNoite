@@ -2,61 +2,92 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo CSS -->
-    <title>Exercicio</title> <!-- Título da página -->
+    <title>ExercicioAula15</title>
+    <link rel="stylesheet" href="../Aula15-Exercicio-Desafio/style.css">
 </head>
 <body>
+    
     <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <!-- Cada <li> é um item do menu. O <a> é um link clicável -->
-                    <li><a href="#" class="active">Home</a></li> <!-- Link "Home" com a classe "active" -->
-                    <li><a href="#">About Us</a></li> <!-- Link "About Us" -->
-                    <li><a href="#">Portfolio</a></li> <!-- Link "Portfolio" corrigido -->
-                    <li><a href="#">Services</a></li> <!-- Link "Services" -->
-                    <li><a href="#">Contact Us</a></li> <!-- Link "Contact Us" -->
-                </ul>
-            </nav>
-        </div>
-    </header>  
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
     
     <section class="hero">
-        <h1>I AM DESIGNER</h1>
-        <p>I Make Wonderful Things</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-        <a href="#" class="btn">Read More</a>
+        <div class="hero-content">
+            <h1>I AM DESIGNER</h1>
+            <p>I Make Wonderful Things</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
     </section>
 
-    <section class="info">
-        <div class="container info-content">
-            <div class="left">
-                <h2>Creative and Professional</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed enim vehicula, sollicitudin libero et, ornare sapien. Vestibulum aliquam libero eget eros laoreet, quis elementum dolor lacinia.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed enim vehicula, sollicitudin libero et, ornare sapien.</p>
-                <a href="#" class="btn">Read More</a>
+    <section class="about">
+        <div class="about-content">
+            <h2>Creative and Professional</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="team">
+            <h3>Our Team</h3>
+            <div class="team-member">
+                <img src="../Aula15-Exercicio-Desafio/img/man.jpg" alt="Team Member 1">
+                <h4>Name Surname</h4>
+                <p>Job Position</p>
             </div>
-            <div class="right">
-                <h2>Our Team</h2>
-                <div class="team-member">
-                    <img src="./img/man.jpg" alt="Membro 1">
-                    <p>Name Surname</p>
-                    <p>Job Position</p>
-                </div>
-                <div class="team-member">
-                    <img src="./img/woman2.avif" alt="Membro 2">
-                    <p>Name Surname</p>
-                    <p>Job Position</p>
-                </div>
-                <div class="team-member">
-                    <img src="./img/woman2.avif" alt="Membro 3">
-                    <p>Name Surname</p>
-                    <p>Job Position</p>
-                </div>
+            <div class="team-member">
+                <img src="../Aula15-Exercicio-Desafio/img/woman2.avif" alt="Team Member 2">
+                <h4>Name Surname</h4>
+                <p>Job Position</p>
+            </div>
+            <div class="team-member">
+                <img src="../Aula15-Exercicio-Desafio/img/woman2.avif" alt="Team Member 3">
+                <h4>Name Surname</h4>
+                <p>Job Position</p>
             </div>
         </div>
     </section>
 
+    
+    <section class="portfolio">
+        <h2>Selected Work</h2>
+        <div class="portfolio-filters">
+            <button>All</button>
+            <button>Web Design</button>
+            <button>Logo Design</button>
+            <button>Branding</button>
+        </div>
+        <div class="portfolio-items">
+            <img src="../Aula15-Exercicio-Desafio/img/projeto1.jpeg" alt="Project 1">
+            <img src="../Aula15-Exercicio-Desafio/img/projeto2.jpeg" alt="Project 2">
+            <img src="../Aula15-Exercicio-Desafio/img/produto3.avif" alt="Project 3">
+            <img src="../Aula15-Exercicio-Desafio/img/projeto4.jpg" alt="Project 4">
+        </div>
+    </section>
+
+    
+    <section class="contact">
+        <h2>Get In Touch</h2>
+        <form action="#">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>© 2024 Denise Assis Cardoso</p>
+    </footer>
 </body>
 </html>

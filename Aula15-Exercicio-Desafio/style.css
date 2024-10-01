@@ -1,152 +1,163 @@
+/* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão da página */
-  color: rgb(33, 33, 33); /* Define a cor do texto padrão */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-.container {
-  width: 1200px; /* largura máxima do conteiner */
-  margin: 0 auto; /* Centraliza o conteiner na página */
-}
-
-header .container {
-  overflow: hidden; /* Garante que o conteúdo flutuante dentro do contêiner seja exibido corretamente */
-}
 
 header {
-  padding: 10px 25% 30px;
-  /*  10px acima          */
-  /*  25% esquerda e direita */
-  /*  40px abaixo       */
-  background-color: black; /* Cor de fundo preta para o cabeçalho */
+  background: #222;
+  padding: 10px 20px;
+  text-align: center;
 }
 
-header nav {
-  display: flex; /* Usa o layout flexível para organizar os itens de menu */
+nav ul {
+  list-style: none;
 }
 
-header nav ul {
-  list-style: none; /* Remove os marcadores de lista */
-  display: flex; /* Alinhar os itens do menu na horizontal */
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
 }
 
-header nav ul li {
-padding: 5px 5px;
-  
-    margin-right: 30px; /* Adiciona margem à direita de cada item do menu */
-}
-
-header nav ul li:last-child {
-  margin-right: 0; /* Remove a margem do último item para ñ ter espaçamento extra no fim */
-}
-header nav ul li a {
-  text-decoration: none; /* Remove o sublinhado dos links */
-  color: white; /* Define a cor do texto */
-  padding: 10px 5px; /* */
-  transition: background-color 0.3s ease; /* Adiciona uma transição suave ao mudar a cor de fundo */
-}
-
-header nav ul li:hover {
- border-radius: 5px;
-    background-color: #ff5678; /* Muda a cor de fundo quando o usuário passa o mouse sobre o link */
-padding: 5px 5px;
-overflow: hidden;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .hero {
-    background-image: url(./img/desafio-image.jpeg);/* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Faz com que a imagem cubra toda a área da seção */
-    background-position: center; /* Centraliza a imagem de fundo */
-    height: 100vh; /* Define a altura da seção como 100% da altura da tela */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white; /* Define a cor do texto como branca para contrastar com a imagem */
-    text-align: center;
-    padding: 20px;
+  background: url('../Aula15-Exercicio-Desafio/img/desafio-image.jpeg') no-repeat center center/cover;
+  height: 70vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero h1 {
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.hero .btn {
-  padding: 10px 20px;
-  background-color: #ff5678;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.hero .btn:hover {
-  background-color: #ff3456;
-}
-.info {
-  background-color: #333;
-  color: white;
-  padding: 50px 0;
-}
-
-.info .info-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.info .left {
-  width: 60%;
-}
-
-.info .left h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.info .right {
-  width: 30%;
-}
-
-.team-member {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.team-member img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.team-member p {
-  margin: 0;
+  margin: 15px 0;
 }
 
 .btn {
   padding: 10px 20px;
-  background-color: #ff5678;
+  background: #ff4081;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background: #333;
+  color: white;
+}
+
+.team {
+  text-align: center;
+}
+
+.team-member {
+  margin: 20px 0;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.team-member h4 {
+  margin-top: 10px;
+}
+
+
+.portfolio {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.portfolio-filters {
+  margin-bottom: 30px;
+}
+
+.portfolio-filters button {
+  padding: 10px 15px;
+  margin: 0 10px;
+  background-color: #ff4081;
   color: white;
   border: none;
   border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #ff3456;
+.portfolio-filters button:hover {
+  background-color: #e53575;
+}
+
+.portfolio-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-items img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.contact {
+  background: #222;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact form input, .contact form textarea {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: none;
+}
+
+.contact button {
+  padding: 10px 20px;
+  background: #ff4081;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
