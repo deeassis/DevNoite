@@ -1,14 +1,256 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-.navbar { display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: #f8f8f8; }
-.navbar ul { list-style-type: none; margin: 0; padding: 0; display: flex; }
-.navbar li { margin-right: 20px; }
-.navbar a { text-decoration: none; color: black; }
-.content { padding: 20px; }
-.content h1 { color: green; }
-.gallery { display: flex; gap: 10px; }
-.gallery img { width: 30%; }
-.footer { padding: 20px; background-color: #f8f8f8; }
-.footer .contact { margin-bottom: 20px; }
-.footer .faq { margin-bottom: 20px; }
-.footer .contact-form { background-color: #e0f7e0; padding: 10px; }
-.footer .contact-form input, .footer .contact-form button { display: block; margin-bottom: 10px; width: 100%; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: transparent;
+    color: white;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .phone-number {
+    background-color: rgba(255, 255, 255, 0.26); 
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 0.942);
+    font-weight: bold;
+    margin-right: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info span {
+    margin-right: 20px;
+  }
+  
+  .btn-header {
+    background-color: #ff7043;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero {
+    background-image: url('../Aula16/img/image-back2.jpg');
+    background-size: cover;
+    color: white;
+    padding: 200px 0;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+  }
+  
+  .hero-content {
+    text-align: left; 
+    padding-left: 50px; 
+    max-width: 500px; 
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .btn-main {
+    background-color: #2e7c31;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .content {
+    width: 90%;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: 60px;
+    margin-bottom: auto;
+    padding: 30px 0;
+    background-color: #e7e7e7;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .grid {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid-text {
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  
+  .grid-text h3{
+    font-size: 2rem;
+  }
+  
+  .grid-text p{
+    margin-top: 33px;
+    font-size: 20px;
+  }
+  
+  .grid-item {
+    flex: 1;
+    margin: 20px;
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px;
+    width: 200px;
+    text-align: left;
+  }
+  
+  .other-trees {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .tree-grid {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .tree-item {
+    margin: 0 20px;
+  }
+  
+  .tree-item img {
+    width: 300px;
+    height: 300px;
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .tree-item img:hover {
+    transform: scale(1.1);
+  }
+  footer {
+    background-color: #d4f5d0;
+    color: black;
+    padding: 60px;
+    text-align: left;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  footer p {
+    margin-bottom: 20px;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  footer ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .contact-footer {
+    margin-top: 20px;
+  }
+  
+  .contact-number {
+    background-color: rgba(147, 147, 147, 0.56);
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .contact-popup {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #2E2E2E;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact-popup input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .contact-popup button {
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

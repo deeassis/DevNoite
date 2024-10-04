@@ -1,66 +1,98 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Better Place Forests</title>
-<link rel="stylesheet" href="../Aula16/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Aula16/style.css">
+  <title>Better Place Forests</title>
 </head>
 <body>
-
-<div class="navbar">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Location</a></li>
-    <li><a href="#">Trees</a></li>
-    <li><a href="#">Contact</a></li>
-    <li><a href="#">More Info</a></li>
-  </ul>
-  <span>1-999-999-9999</span>
-</div>
-
-<div class="content">
-  <h1>World Forest</h1>
-  <h2>Earth's third tallest tree species.</h2>
-  <p>Douglas firs are native to North America and live for over 1,000 years.</p>
-  <div class="gallery">
-    <img src="../Aula16/img/image-back2.jpg" alt="Forest Image">
-    <img src="../Aula16/img/owl.jpg" alt="Owl Image">
-    <img src="../Aula16/img/reptil.jpg" alt="Lizard Image">
-  </div>
-</div>
-
-<div class="footer">
-  <div class="gallery">
-    <div>
-      <img src="../Aula16/img/beautiful-greenery.jpg" alt="Redwood">
-      <p>Redwood</p>
+  <header>
+    <div class="container">
+      <h1>Better Place Forests</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Trees</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="contact-info">
+        <span class="phone-number">11-9999-9999</span>
+        <a href="#" class="btn-header">Get More Info</a>
+      </div>
     </div>
-    <div>
-      <img src="../Aula16/img/black-leafless-tree.jpg" alt="Tinoki">
-      <p>Tinoki</p>
-    </div>
-    <div>
-      <img src="../Aula16/img/vertical-shot-lonely-tree-middle-meadow-front-high-hills-morning.jpg" alt="Madrono">
-      <p>Madrono</p>
-    </div>
-  </div>
-  <p>America's first conservation spreading forests. Create a memorial that will last with generations to come.</p>
-  <div class="contact">
-    <h3>Contact</h3>
-    <p>1-999-999-9999</p>
-  </div>
-  <div class="faq">
-    <h3>FAQ</h3>
-    <p>Frequently Asked Questions</p>
-  </div>
-  <div class="contact-form">
-    <h3>Questions? Ask here!</h3>
-    <input type="text" placeholder="First Name">
-    <input type="email" placeholder="Email">
-    <button>Send</button>
-  </div>
-</div>
+  </header>
 
+  <section class="hero">
+    <div class="hero-content">
+      <h2>World Forest</h2>
+      <p>Earth's third tallest tree species.</p>
+      <a href="#" class="btn-main">Choose Tree</a>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="grid">
+      <div class="grid-text">
+        <h3>Evergreen and Everlasting</h3>
+        <p>Douglas firs are native to North America and live for over 1,000 years...</p>
+      </div>
+      <div class="grid-item">
+        <div class="image-container">
+          <img src="../Aula16/img/owl.jpg" alt="Owl on tree">
+          <span class="image-text">Home to many species</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="image-container">
+          <img src="../Aula16/img/reptil.jpg" alt="Lizard on tree">
+          <span class="image-text">Natural Icon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="other-trees">
+    <h3>Explore Other Trees</h3>
+    <div class="tree-grid">
+      <div class="tree-item">
+        <img src="../Aula16/img/beautiful-greenery.jpg" alt="Redwood tree">
+        <p>Redwood</p>
+      </div>
+      <div class="tree-item">
+        <img src="../Aula16/img/black-leafless-tree.jpg" alt="Tanoak tree">
+        <p>Tanoak</p>
+      </div>
+      <div class="tree-item">
+        <img src="../Aula16/img/vertical-shot-lonely-tree-middle-meadow-front-high-hills-morning.jpg" alt="Madrone tree">
+        <p>Madrone</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>America's first conservation spreading forests. Create a memorial that will be shared with generations to come.</p>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+      <div class="contact-footer">
+        <span class="contact-number">Contact: 888-758-7874</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="contact-popup">
+    <h3>Questions? Ask away.</h3>
+    <form action="#">
+      <input type="text" name="name" placeholder="First Name">
+      <input type="email" name="email" placeholder="Email">
+      <button type="submit">Send</button>
+    </form>
+  </div>
 </body>
-</html> 
+</html>
